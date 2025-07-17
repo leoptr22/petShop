@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+Petshop Blog - SPA con React
+Este proyecto es una aplicación web construida con React y React Router, que simula el frontend de un blog o tienda de mascotas. Implementa componentes reutilizables, navegación dinámica por categorías y artículos, y consumo de API con hooks.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Características principales
+🧱 Estructura de componentes
+Header:
 
-## Available Scripts
+Contiene el logo (doguito.svg) y navegación con Link de React Router.
 
-In the project directory, you can run:
+Diseño responsive con menú hamburguesa.
 
-### `npm start`
+ListPosts:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Renderiza dinámicamente una lista de publicaciones.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Cada post tiene título, descripción y una clase que varía según su categoría.
 
-### `npm test`
+Usa useEffect y useState para obtener datos desde una API externa simulada.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ListCategories:
 
-### `npm run build`
+Muestra una lista de categorías como filtros.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Cada categoría redirige a su propia ruta (/categoria/:id).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🧠 Lógica de negocio
+buscar() es una función utilitaria que realiza fetch de endpoints dinámicos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Toda la app está orientada a componentes funcionales con hooks de React (useEffect, useState).
 
-### `npm run eject`
+Rutas manejadas con react-router-dom.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📁 Tecnologías utilizadas
+⚛️ React.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🌐 React Router
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🧠 Hooks (useState, useEffect)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🎨 CSS modularizado por componente
 
-## Learn More
+🐶 Recursos gráficos locales (/assets/img/doguito.svg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🔗 API simulada (buscar())
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✅ Funcionalidades a futuro (opcional)
+Integración con backend real (Firebase, Node, etc.).
 
-### Code Splitting
+Paginación o búsqueda por título.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Agregar detalle del post (/posts/:id).
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Panel de administración (crear/editar/eliminar publicaciones).
